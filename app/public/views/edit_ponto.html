@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Controle de Ponto - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="container text-center">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand medium" href="#">Cadastro de Ponto</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link medium" href="home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle medium" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                Funcionarios
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item light" href="cad_func">Cadastrar</a>
+                <a class="dropdown-item light" href="edit_func">Editar|Excluir</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle medium" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                Ponto
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item light" href="cad_ponto">Cadastrar</a>
+                <a class="dropdown-item light" href="edit_ponto">Editar|Excluir</a>
+                </div>
+            </li>
+            <li class="nac-link">
+                <a class="nav-link medium" href="relatorios">Relatórios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link medium" href="about">Sobre</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="medium" style="margin-top: 50px;margin-bottom: 50px;font-size: 50px;">Gerenciamento de Pontos</h1>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" id="listaFuncionarios">Editar/Excluir</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="editarFuncionarios">Pontos</a>
+        </li>
+    </ul>
+    <div class="card text-center" style="height: 100%; padding: 50px; border-top: none; border-radius: 0px;">
+        <div class="alert alert-warning col-12" id="alert">
+            <strong>Ops.</strong> Parece que <a id="nomeAlert"></a> não tem registro de pontos.
+        </div>
+        <form class="form col-12" method="post" id="form">
+            <div class="form-group row col-12">
+                <label class="medium col-2 col-form-label">Funcionário</label>
+                <input class="form-control col-2 light" id="id_ponto" name="id_ponto" readonly>
+                <input class="form-control col-2 light" id="id_func" name="id_func" hidden>
+                <div class="col-1"></div>
+                <select class="form-control col-7 light" name="nome" id="nome">
+                    <option disabled selected>Selecione um funcionário.</option>
+                </select>
+            </div>
+            <div class="form-group row col-12">
+                <label class="medium col-2 col-form-label">Data</label>
+                <select class="form-control col-4 light" name="data_ponto" id="data_ponto">
+                    <option disabled selected>Selecione uma data.</option>
+                </select>
+                <label class="medium col-2 col-form-label">Feriado:</label>
+                <select class="form-control col-4 light" name="feriado" id="feriado">
+                    <option value="NAO">NAO</option>
+                    <option value="SIM">SIM</option>
+                </select>
+            </div>
+            <div class="form-group row col-12">
+                <label class="medium col-2 col-form-label">1ª Entrada</label>
+                <input class="form-control col-4 light" type="time" name="entPri" id="entPri">
+                <label class="medium col-2 col-form-label">1ª Saída</label>
+                <input class="form-control col-4 light" type="time" name="saiPri" id="saiPri">
+            </div>
+            <div class="form-group row col-12">
+                <label class="medium col-2 col-form-label">2ª Entrada</label>
+                <input class="form-control col-4 light" type="time" name="entSeg" id="entSeg">
+                <label class="medium col-2 col-form-label">2ª Saída</label>
+                <input class="form-control col-4 light" type="time" name="saiSeg" id="saiSeg">
+            </div>
+            <div class="col-12" style="margin-top: 5px; margin-bottom: 5px;"></div>
+            <div class="form-group row col-12">
+                <div class="col-1"></div>
+                <input class="btn btn-danger col-4" type="submit" value="Excluir" id="deletePonto"/>
+                <div class="col-2"></div>
+                <input class="btn btn-success col-4" type="submit" value="Atualizar" id="updatePonto"/>
+                <div class="col-1"></div>
+            </div>
+        </form>
+        <div class="text-center" id="tabela">
+            <table class="col-12 table text-center table-sm table-condensed table-striped table-hover" style="padding-top: 5px; margin-top: 13px;">
+                <thead class="text-center thead-inverse" style="text-align: center;">
+                    <tr class="medium">
+                        <th class="text-center">ID Ponto</th>
+                        <th class="text-center">Nome</th>
+                        <th class="text-center">Data</th>
+                        <th class="text-center">Feriado</th>
+                        <th class="text-center">1ª Entrada</th>
+                        <th class="text-center">1ª Saida</th>
+                        <th class="text-center">2ª Entrada</th>
+                        <th class="text-center">2ª Saida</th>
+                    </tr>
+                </thead>
+                <tbody class="light" id="tbodyPontos">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="../javascript/index.js"></script>
+</html>
