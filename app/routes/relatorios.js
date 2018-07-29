@@ -9,10 +9,13 @@ module.exports = function(app){
         var email = req.body
 
         var connection  = app.config.dbConnection();
-        var models = app.app.models.select;
+        var models = app.app.models.export;
+        var mail = app.app.models.mail;
+        fs.unlinkSync('C:/Users/ro_scheffeld/Downloads/controleHoras/funcionarios.csv');
 
-        models.recuperarFuncionario(connection, function(error, result){
-            res.json(result);
+        models.relatorioFuncionarios(connection, function(error, result){
+            var arquivoRelatorio = fs.readFileSync('C:/Users/ro_scheffeld/Downloads/controleHoras/funcionarios.csv');
+            res.redirect('/relatorios');
         })
     })
 
@@ -20,9 +23,9 @@ module.exports = function(app){
         var email = req.body
 
         var connection  = app.config.dbConnection();
-        var models = app.app.models.select;
+        var models = app.app.models.export;
 
-        models.recuperarPonto(connection, function(error, result){
+        models.relatorioPontos(connection, function(error, result){
             res.send(result);
         })
     })
