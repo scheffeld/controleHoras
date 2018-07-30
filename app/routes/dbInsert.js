@@ -16,7 +16,13 @@ module.exports = function(app){
         // mail.cadFuncionario(funcionario);
 
         models.salvarFuncionario(funcionario, connection, function(error, result){
-            res.redirect('/cad_func');
+            if(error){
+                console.log(error)
+                res.redirect('/cad_func');
+            } else {
+                console.log(result)
+                res.redirect('/cad_func');
+            }
         });
     });
 
@@ -28,7 +34,13 @@ module.exports = function(app){
         
 
         models.salvarPonto(pontos, connection, function(error, result){
-            res.redirect('/cad_ponto');
+            if(error){
+                console.log(error)
+                res.redirect('/cad_ponto');
+            } else {
+                console.log(result)
+                res.redirect('/cad_ponto');
+            }
         });
     });
 

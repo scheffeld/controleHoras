@@ -5,7 +5,7 @@ module.exports = function(){
     };
 
     this.updatePonto = function(ponto, connection, callback){
-        connection.query('UPDATE pontos SET ? WHERE id_func = ?', [ponto, ponto.id_ponto], callback);
+        connection.query('UPDATE pontos SET ? WHERE id_ponto = ?', [ponto, ponto.id_ponto], callback);
     };
     
     return this;

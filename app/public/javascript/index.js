@@ -25,6 +25,12 @@ dadosFuncionarios.then(function(resposta){
     // Atribuindo elemento à variavel
     var idFuncionario = $("#id_func");
     var nome = $("#nome");
+    var teste = $("#teste");
+    var teste1 = $("#teste1")
+    var teste2 = $("#teste2")
+    var teste3 = $("#teste3")
+    var teste4 = $("#teste4")
+    var teste5 = $("#teste5")
     // For para adicionar os nomes ao select
     for (i = 0; i < funcionarios.length; i++){
         nomeFuncionario.append('<option value="'+ funcionarios[i].nome +'">'+ funcionarios[i].nome +'</option>')
@@ -172,23 +178,33 @@ dadosPontos.then(function(resposta){
 
     alerta.hide()
 
+    for (i = 0; i < pontos.length; i++){
+        var dataPonto = (pontos[i].data_ponto).slice(0, 10);
+        pontos[i].data_ponto = dataPonto
+    }
+
     nome.change(function(){
         for (i = 0; i < pontos.length; i++){
+            var dataPonto = (pontos[i].data_ponto).slice(0, 10);
+            var dataFormated = dataPonto.slice(8, 10)+'/'+dataPonto.slice(5, 7)+'/'+dataPonto.slice(0, 4);
+            data_ponto.append('<option value="'+ dataPonto +'">'+ dataFormated +'</option>')
             if (pontos[i].nome == nome.val()){
-                alerta.hide()
-                for (j = 0; j < pontos.length; i++){
+                alerta.hide();
+                /*for (j = 0; j < pontos.length; i++){
                     if (pontos[j].nome == nome.val()){
-                        var dataPonto = (pontos[i].data_ponto).slice(0, 10)
+                        
                         var dataFormated = dataPonto.slice(8, 10)+'/'+dataPonto.slice(5, 7)+'/'+dataPonto.slice(0, 4);
                         data_ponto.append('<option value="'+ pontos[i].data_ponto +'">'+ dataFormated +'</option>')
                     }
                 }
-                i = pontos.length
+                i = pontos.length*/
+                break;
             } else if ((pontos[i].nome != nome.val()) && ((i+1) >= pontos.length)) {
                 alerta.show()
                 nomeAlert.empty();
                 nomeAlert.append(nome.val());
-                data_ponto.val('');
+                data_ponto.empty();
+                data_ponto.append('<option disabled selected>Selecione um funcionário.</option>')
                 feriado.val('');
                 entPri.val('');
                 saiPri.val('');
@@ -201,19 +217,13 @@ dadosPontos.then(function(resposta){
     data_ponto.change(function(){
         for (i = 0; i < pontos.length; i++){
             if (pontos[i].data_ponto == data_ponto.val()){
-                id_ponto.val(pontos[i].id_ponto);
+                id_ponto.val(parseInt(pontos[i].id_ponto));
                 feriado.val(pontos[i].feriado);
                 entPri.val((pontos[i].entPri).slice(0, 5));
                 saiPri.val((pontos[i].saiPri).slice(0, 5));
                 entSeg.val((pontos[i].entSeg).slice(0, 5));
                 saiSeg.val((pontos[i].saiSeg).slice(0, 5));
-            }
+            } 
         }
     })
-
-
-
-    
-
-
 })

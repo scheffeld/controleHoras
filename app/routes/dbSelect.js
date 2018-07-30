@@ -14,7 +14,13 @@ module.exports = function(app){
         var models = app.app.models.select;
 
         models.recuperarPonto(connection, function(error, result){
-            res.json(result)
+            if(error){
+                console.log(error)
+                res.json(result)
+            } else {
+                console.log(result)
+                res.json(result)
+            }
         });
 
 
