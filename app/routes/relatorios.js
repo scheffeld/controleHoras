@@ -7,7 +7,7 @@ module.exports = function(app){
 
     app.post('/relatorios/funcionarios', function(req, res){
         var email = req.body
-        var caminho = 'C:/Users/ro_scheffeld/Downloads/controleHoras/funcionarios.csv'
+        var caminho = 'C:/Users/ro_scheffeld/Downloads/controleHoras/app/public/csv/funcionarios.csv'
 
         var connection  = app.config.dbConnection();
         var models = app.app.models.export;
@@ -24,7 +24,7 @@ module.exports = function(app){
 
     app.post('/relatorios/pontos', function(req, res){
         var email = req.body
-        var caminho = 'C:/Users/ro_scheffeld/Downloads/controleHoras/pontos.csv'
+        var caminho = 'C:/Users/ro_scheffeld/Downloads/controleHoras/app/public/csv/pontos.csv'
 
         var connection  = app.config.dbConnection();
         var models = app.app.models.export;
