@@ -60,6 +60,76 @@ module.exports = function(){
         transporter.sendMail(mailOptions);
     }
 
+    this.relatorioFuncionarios = function(email){
+        var nodemailer = require("nodemailer");
+        var transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'rscheffeld@gmail.com',
+                pass: 'cannabis420'
+            },
+            tls: {
+                rejectUnauthorized: false
+            },
+            dkim: {
+                domainName: '@controledehoras.com.br',
+                keySelector: '2018'
+            }
+        });
+        
+        var mailOptions = {
+            from: {
+                name: 'Controle de Horas - ADM ',
+                address: 'controle@teste.com.br'
+            },
+            to: email,
+            subject: 'RELATORIOS',
+            html: '<p>  Olá, este email contem o anexo com todos os funcionarios salvos no sistema.<br>   Este arquivo esta no formato <b>.CSV</b> e deve ser importado através do seu gerenciador de planilhas preferido.<br>  Qualquer dúvida, envie um email para <i>rscheffeld@gmail.com</i></p>',
+            attachments: {
+                filename: 'funcionarios.csv',
+                path: 'C:/Users/ro_scheffeld/Downloads/controleHoras/funcionarios.csv'
+            }
+        }
+        
+        transporter.sendMail(mailOptions);
+    }
+
+    this.relatorioPontos = function(email){
+        var nodemailer = require("nodemailer");
+        var transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'rscheffeld@gmail.com',
+                pass: 'cannabis420'
+            },
+            tls: {
+                rejectUnauthorized: false
+            },
+            dkim: {
+                domainName: '@controledehoras.com.br',
+                keySelector: '2018'
+            }
+        });
+        
+        var mailOptions = {
+            from: {
+                name: 'Controle de Horas - ADM ',
+                address: 'controle@teste.com.br'
+            },
+            to: email,
+            subject: 'RELATORIOS',
+            html: '<p>  Olá, este email contem o anexo com todos os pontos registrados no sistema.<br><br>   Este arquivo esta no formato <b>.CSV</b> e deve ser importado através do seu gerenciador de planilhas preferido.<br><br>  Qualquer dúvida, envie um email para <i>rscheffeld@gmail.com</i></p>',
+            attachments: {
+                filename: 'pontos.csv',
+                path: 'C:/Users/ro_scheffeld/Downloads/controleHoras/pontos.csv'
+            }
+        }
+        
+        transporter.sendMail(mailOptions);
+    }
+
+
+
     return this;
 
 }
