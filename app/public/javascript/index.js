@@ -79,6 +79,9 @@ dadosFuncionarios.then(function(resposta){
     var form = $("#funcionarioEditado");
     form.hide();
 
+    lista.css('cursor', 'default')
+    editar.css('cursor', 'default')
+
     lista.click(function(){
         tabela.hide();
         form.show();

@@ -5,7 +5,12 @@ module.exports = function(app){
         var models = app.app.models.select;
 
         models.recuperarFuncionario(connection, function(error, result){
-            res.json(result);
+            if(error){
+                console.log(error)
+            } else {
+                console.log('Sucesso!')
+                res.json(result)
+            }
         });
     })
 
@@ -16,9 +21,8 @@ module.exports = function(app){
         models.recuperarPonto(connection, function(error, result){
             if(error){
                 console.log(error)
-                res.json(result)
             } else {
-                console.log(result)
+                console.log('Sucesso!')
                 res.json(result)
             }
         });

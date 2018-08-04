@@ -33,9 +33,16 @@ module.exports = function(app){
         fs.unlinkSync(caminho);
         
         models.relatorioPontos(connection, function(error, result){
-            var arquivoRelatorio = fs.readFileSync(caminho);
-            mail.relatorioPontos(email.email);
-            res.redirect('/relatorios');
+            if(error){
+                console.log(error)
+                res.redirect('/relatorios');
+            } else {
+                console.log('Sucesso!')
+                console.log(caminho)
+                var arquivoRelatorio = fs.readFileSync(caminho);
+                mail.relatorioPontos(email.email);
+                res.redirect('/relatorios');
+            }
         })
     })
 
