@@ -83,7 +83,7 @@ module.exports = function(){
                 address: 'controle@teste.com.br'
             },
             to: funcionario.email,
-            subject: 'CADASTRO DE USUARIO',
+            subject: 'ALTERAÇÃO DE FUNCIONARIO',
             html: '<p>Olá, seu supervisor fez alterações no seu cadastro. Confira os novos dados.<br><br><b>Nome: </b>'+funcionario.nome+'<br><b>Cargo: </b>'+funcionario.cargo+'<br><b>Setor: </b>'+funcionario.setor+'<br><b>Supervisor: </b>'+funcionario.superv+'<br><b>Carga Horária: </b>'+funcionario.carga+'<br><b>Email: </b><i>'+funcionario.email+'</i><br></p>'
         }
         
@@ -143,7 +143,7 @@ module.exports = function(){
                 address: 'controle@teste.com.br'
             },
             to: email,
-            subject: 'RELATORIOS',
+            subject: 'RELATORIO DE FUNCIONARIO',
             html: '<p>  Olá, este email contem o anexo com todos os funcionarios salvos no sistema.<br>   Este arquivo esta no formato <b>.CSV</b> e deve ser importado através do seu gerenciador de planilhas preferido.<br>  Qualquer dúvida, envie um email para <i>rscheffeld@gmail.com</i></p>',
             attachments: {
                 filename: 'funcionarios.csv',
@@ -177,7 +177,7 @@ module.exports = function(){
                 address: 'controle@teste.com.br'
             },
             to: email,
-            subject: 'RELATORIOS',
+            subject: 'RELATORIO DE PONTO',
             html: '<p>  Olá, este email contem o anexo com todos os pontos registrados no sistema.<br><br>   Este arquivo esta no formato <b>.CSV</b> e deve ser importado através do seu gerenciador de planilhas preferido.<br><br>  Qualquer dúvida, envie um email para <i>rscheffeld@gmail.com</i></p>',
             attachments: {
                 filename: 'pontos.csv',
@@ -247,7 +247,6 @@ module.exports = function(){
         
         transporter.sendMail(mailOptions);
     }
-
 
     return this;
 
