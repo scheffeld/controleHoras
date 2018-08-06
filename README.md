@@ -18,7 +18,7 @@ Foram utilizados também, frameworks para o auxilio no desenvolvimento.
 
 Para armazenamento dos dados, foi utilizado um Banco de Dados local.
 
--MySQL
+- MySQL
 
 Para armazenamento dos arquivos.
 
