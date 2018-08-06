@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body class="container text-center">
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse rounded-bottom">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,7 +27,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle medium" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                Funcionarios
+                Funcionários
                 </a>
                 <div class="dropdown-menu">
                 <a class="dropdown-item light" href="cad_func">Cadastrar</a>
@@ -53,10 +53,12 @@
         </div>
     </nav>
 
-    <h1 class="medium" style="margin-top: 50px;margin-bottom: 50px;font-size: 50px;">Página Inicial</h1>
+    <h1 class="medium" style="margin-top: 50px;margin-bottom: 50px;font-size: 50px;">Home</h1>
     
     <div class="jumbotron card-default" style="margin: 15px; height: 100%;">
-        <p id="teste"></p>
+        <h5 class="medium">Olá, seja bem-vindo ao nosso sistema de controle de ponto.</h5>
+        <br>
+        <p class="light" style="text-align: justify">Nosso sistema registra os pontos dos funcionários que seram cadastrados. Todos os registros devem ser efetuados tendo como base os funcionários já cadastrados, ou seja, caso você ainda não esteja cadastrado não será possível registrar os seus pontos. O cadastro, tanto dos pontos como do funcionário, deve ser feito pelo supervisor e/ou responsável pelo setor.<br><br> Assim que o funcionário for cadastrado, ele recebera um email informando e um resumo dos dados cadastrados. O mesmo vale para os pontos, e para qualquer alteração ou exclusão de dados. Todas as ações nos cadastros serão notificadas para o funcionário que esta sendo afetado.<br><br> O sistema possui também uma página de relatórios, caso o responsável pela área necessite realizar um levantamento dos funcionários ou pontos, esses dados são enviados no email informado no formato <a class="medium">.CSV</a>.</p>
     </div>
 </body>
 <script src="../javascript/index.js"></script>

@@ -16,3 +16,12 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
+
+.body-background {
+    background-color: #212121;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
