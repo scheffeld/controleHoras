@@ -55,38 +55,41 @@
     <h1 class="medium" style="margin-top: 50px;margin-bottom: 50px;font-size: 50px;">Cadastro de Funcionario</h1>
     
     <div class="card card-default text-center" style="margin: 15px; height: 100%; padding: 50px;">
+        <div class="alert alert-danger form-group row col-12" role="alert" id="alertaCampo">
+            
+        </div>
         <form class="form col-12" action="/cad_func/salvar" method="post">
             <div class="form-group row col-12">
                 <label for="example-text-input" class="col-1 col-form-label medium">Nome:</label>
-                <input class="form-control light col-6" type="text" name="nome" placeholder="Nome Completo">
+                <input class="form-control light col-6" type="text" id="nome" name="nome" placeholder="Nome Completo">
 
                 <label for="example-text-input" class="col-1 col-form-label medium">Cargo:</label>
-                <input class="form-control light col-4" type="text" name="cargo" placeholder="Ex.: Aux. Administrativo">
+                <input class="form-control light col-4" type="text" name="cargo" id="cargo" placeholder="Ex.: Aux. Administrativo">
             </div>
             <div class="form-group row col-12">
                 <label for="example-text-input" class="col-1 col-form-label medium">Setor:</label>
-                <input class="form-control light col-3" type="text" name="setor" placeholder="Ex.: RH">
+                <input class="form-control light col-3" type="text" id="setor" name="setor" placeholder="Ex.: RH">
 
                 <label for="example-text-input" class="col-2 col-form-label medium">Supervisor:</label>
-                <input class="form-control light col-6" type="text" name="superv" placeholder="Nome Supervisor">
+                <input class="form-control light col-6" type="text" id="superv" name="superv" placeholder="Nome Supervisor">
             </div>
             <div class="form-group row col-12">
                 <label for="example-text-input" class="col-2 col-form-label medium">Carga Horaria:</label>
-                <input class="form-control light col-2" type="time" name="carga" min="6">
+                <input class="form-control light col-2" type="time" id="carga" name="carga" min="6">
 
                 <label for="example-text-input" class="col-2 col-form-label medium">Email:</label>
-                <input class="form-control light col-6" type="text" name="email" placeholder="nome@provedor.com.br">
+                <input class="form-control light col-6" type="text" id="email" name="email" placeholder="nome@provedor.com.br">
             </div>
             <div class="col-12" style="margin-top: 5px; margin-bottom: 5px;"></div>
             <div class="form-group row col-12">
                 <div class="col-1"></div>
-                <input class="btn btn-danger col-4" value="Cancelar"/>
+                <button class="btn btn-danger col-4" id="limpar">Limpar</button>
                 <div class="col-2"></div>
-                <input class="btn btn-success col-4" type="submit" value="Salvar"/>
+                <input class="btn btn-success col-4" type="submit" value="Salvar" id="salvar"/>
                 <div class="col-1"></div>
             </div>
         </form>
     </div>
 </body>
-<script src="../javascript/index.js"></script>
+<script src="../javascript/cadFunc.js"></script>
 </html>

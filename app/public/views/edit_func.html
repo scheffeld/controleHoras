@@ -64,6 +64,9 @@
         </li>
     </ul>
     <div class="card text-center" style="height: 100%; padding: 50px; border-top: none; border-radius: 0px;" id="formSubmit">
+        <div class="alert alert-danger form-group row col-12" role="alert" id="alertaCampo">
+                
+        </div>
         <form class="form col-12" method="post" id="form">
             <div class="form-group row col-12">
                 <label class="medium col-2 col-form-label">ID:</label>
@@ -95,9 +98,9 @@
             <div class="col-12" style="margin-top: 5px; margin-bottom: 5px;"></div>
             <div class="form-group row col-12">
                 <div class="col-1"></div>
-                <input class="btn btn-danger col-4" type="submit" value="Excluir" id="deleteFuncionario"/>
+                <input class="btn btn-danger col-4" type="submit" value="Excluir" id="excluir"/>
                 <div class="col-2"></div>
-                <input class="btn btn-success col-4" type="submit" value="Atualizar" id="updateFuncionario"/>
+                <input class="btn btn-success col-4" type="submit" value="Atualizar" id="atualizar"/>
                 <div class="col-1"></div>
             </div>
         </form>
@@ -121,5 +124,5 @@
         </div>
     </div>
 </body>
-<script src="../javascript/index.js"></script>
+<script src="../javascript/editFunc.js"></script>
 </html>
