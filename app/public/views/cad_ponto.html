@@ -56,13 +56,16 @@
     <h1 class="medium" style="margin-top: 50px;margin-bottom: 50px;font-size: 50px;">Cadastro de Ponto</h1>
     
     <div class="card card-default text-center" style="margin: 15px; height: 100%; padding: 50px;">
+        <div class="alert alert-danger form-group row col-12" role="alert" id="alertaCampo">
+                    
+        </div>
         <form class="form col-12" action="/cad_ponto/salvar" method="post">
             <div class="form-group row col-12">
                 <label class="medium col-2 col-form-label">Funcionário</label>
                 <input class="form-control col-2 light" id="id_func" name="id_func" readonly>
                 <div class="col-1"></div>
                 <select class="form-control col-7 light" name="nome" id="nome">
-                    <option disabled selected>Selecione um funcionário.</option>
+                    <option value="vazio" disabled selected>Selecione um funcionário.</option>
                 </select>
             </div>
             <div class="form-group row col-12">
@@ -70,6 +73,7 @@
                 <input class="form-control col-4 light" type="date" name="data_ponto" id="data_ponto" style="display: -webkit-box;height: 38px">
                 <label class="medium col-2 col-form-label">Feriado:</label>
                 <select class="form-control col-4 light" name="feriado" id="feriado">
+                    <option value="vazio" disabled selected>Selecione uma opção.</option>
                     <option value="NAO">NÃO</option>
                     <option value="SIM">SIM</option>
                 </select>
