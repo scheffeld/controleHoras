@@ -4,7 +4,7 @@ var connMySQL = function(){
     return mysql.createConnection({
         host     : 'localhost',
         user     : 'root',
-        password : '',
+        password : 'root',
         database : 'projeto_vaga'
     });
 };
@@ -13,4 +13,4 @@ module.exports = function(){
     return connMySQL;
 }
 
-// dbConnection for macOS
+// dbConnection for Windows OS

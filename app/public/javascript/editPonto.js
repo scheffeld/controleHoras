@@ -13,13 +13,43 @@ dadosPontos = dbPontos();
 // Requisitando dados para a API e trabalhando com eles na pagina de gerenciamento de pontos
 dadosPontos.then(function(resposta){
     var pontos = resposta.data
+
     var tabela = $("#tabela");
     var form = $("#form");
 
+    var id_func = $("#id_func");
+    var nome = $("#nome");
+    var data_ponto = $("#data_ponto");
+    var feriado = $("#feriado");
+    var entPri = $("#entPri");
+    var saiPri = $("#saiPri");
+    var entSeg = $("#entSeg");
+    var saiSeg = $("#saiSeg");
+    var alerta = $("#alert");
+    var nomeAlert = $("#nomeAlert");
+    var id_ponto = $("#id_ponto");
+
     form.hide();
 
-    var updatePonto = $("#updatePonto");
-    var deletePonto = $("#deletePonto");
+    var abaEditar = $("#editarPontos");
+    var abaLista = $("#listaPontos");
+
+    abaEditar.click(function(){
+        tabela.show();
+        form.hide()
+        abaEditar.addClass('active');
+        abaLista.removeClass('active');
+    })
+
+    abaLista.click(function(){
+        tabela.hide();
+        form.show()
+        abaEditar.removeClass('active');
+        abaLista.addClass('active');
+    })
+
+    var updatePonto = $("#atualziar");
+    var deletePonto = $("#excluir");
 
     updatePonto.click(function(){
         form.attr('action', '/edit_ponto/update');
@@ -30,6 +60,10 @@ dadosPontos.then(function(resposta){
     });
 
     var tbodyPontos = $("#tbodyPontos");
+
+    for (i = 0; i < pontos.length; i++){
+        nome.append('<option value="'+ pontos[i].nome +'">'+ pontos[i].nome +'</option>')
+    }
 
     for (i = 0; i < pontos.length; i++){
         var tr = $('<tr></tr>');
@@ -46,18 +80,6 @@ dadosPontos.then(function(resposta){
         tbodyPontos.append(tr);
     }
 
-    var id_func = $("#id_func");
-    var nome = $("#nome");
-    var data_ponto = $("#data_ponto");
-    var feriado = $("#feriado");
-    var entPri = $("#entPri");
-    var saiPri = $("#saiPri");
-    var entSeg = $("#entSeg");
-    var saiSeg = $("#saiSeg");
-    var alerta = $("#alert");
-    var nomeAlert = $("#nomeAlert");
-    var id_ponto = $("#id_ponto");
-
     alerta.hide()
 
     for (i = 0; i < pontos.length; i++){
@@ -65,28 +87,27 @@ dadosPontos.then(function(resposta){
         pontos[i].data_ponto = dataPonto
     }
 
+    // Adicionando as datas de acordo com o funcionario
     nome.change(function(){
         for (i = 0; i < pontos.length; i++){
             var dataPonto = (pontos[i].data_ponto).slice(0, 10);
             var dataFormated = dataPonto.slice(8, 10)+'/'+dataPonto.slice(5, 7)+'/'+dataPonto.slice(0, 4);
             data_ponto.append('<option value="'+ dataPonto +'">'+ dataFormated +'</option>')
-            if (pontos[i].nome == nome.val()){
+            if (pontos[i].nome == nome.val('vazio')){
                 alerta.hide();
-                /*for (j = 0; j < pontos.length; i++){
+                for (j = 0; j < pontos.length; i++){
                     if (pontos[j].nome == nome.val()){
-                        
                         var dataFormated = dataPonto.slice(8, 10)+'/'+dataPonto.slice(5, 7)+'/'+dataPonto.slice(0, 4);
                         data_ponto.append('<option value="'+ pontos[i].data_ponto +'">'+ dataFormated +'</option>')
                     }
                 }
-                i = pontos.length*/
                 break;
             } else if ((pontos[i].nome != nome.val()) && ((i+1) >= pontos.length)) {
                 alerta.show()
                 nomeAlert.empty();
                 nomeAlert.append(nome.val());
                 data_ponto.empty();
-                data_ponto.append('<option disabled selected>Selecione um funcionário.</option>')
+                data_ponto.append('<option value="vazio" disabled selected>Selecione um funcionário.</option>')
                 feriado.val('');
                 entPri.val('');
                 saiPri.val('');
@@ -96,6 +117,7 @@ dadosPontos.then(function(resposta){
         }    
     })
 
+    // Mudando as informações do ponto de acordo com a data
     data_ponto.change(function(){
         for (i = 0; i < pontos.length; i++){
             if (pontos[i].data_ponto == data_ponto.val()){
