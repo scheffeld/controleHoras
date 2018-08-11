@@ -80,18 +80,10 @@ dadosFuncionarios.then(function(resposta){
 
     // Alerta
     var alerta = $("#alertaCampo");
-    var nomeVazio = '<a class="col-12">Campo <strong>Nome</strong> vazio</a>'
-    var cargoVazio = '<a class="col-12">Campo <strong>Cargo</strong> vazio</a>'
-    var setorVazio = '<a class="col-12">Campo <strong>Setor</strong> vazio</a>'
-    var supervVazio = '<a class="col-12">Campo <strong>Supervisor</strong> vazio</a>'
-    var cargaVazio = '<a class="col-12">Campo <strong>Carga</strong> vazio</a>'
-    var emailVazio = '<a class="col-12">Campo <strong>Email</strong> vazio</a>'
     alerta.hide();
 
     // Mensagens de alerta caso campo vazio
     var alerta = $("#alertaCampo");
-    var closeAlerta = '<button type="button" class="close" id="fecharAlerta"><span aria-hidden="true">&times;</span></button>'
-    var fecharAlerta = $("#fecharAlerta")
 
     // Fechando alerta  
     alerta.click(function(){
@@ -102,7 +94,7 @@ dadosFuncionarios.then(function(resposta){
     var verificarCampo = function(nomeCampo, alertaCampo, e){
         if (nomeCampo.val() == '' || nomeCampo.val() == null){
             e.preventDefault();
-            alerta.append(alertaCampo)
+            alerta.append('<a class="col-12">Campo <strong>'+ alertaCampo +'</strong> vazio</a>')
             alerta.show();
         };
     }
@@ -110,24 +102,24 @@ dadosFuncionarios.then(function(resposta){
     // Ação para botão de atualização de dados
     updateFuncionario.click(function(e){
         alerta.empty();
-        verificarCampo(nome, nomeVazio, e);
-        verificarCampo(cargo, cargoVazio, e);
-        verificarCampo(setor, setorVazio, e);
-        verificarCampo(superv, supervVazio, e);
-        verificarCampo(carga, cargaVazio, e);
-        verificarCampo(email, emailVazio, e);
+        verificarCampo(nome, 'Nome', e);
+        verificarCampo(cargo, 'Cargo', e);
+        verificarCampo(setor, 'Setor', e);
+        verificarCampo(superv, 'Supervisor', e);
+        verificarCampo(carga, 'Carga', e);
+        verificarCampo(email, 'Email', e);
         form.attr('action', '/edit_func/update');
     });
 
     // Ação para botão de exclusão de dados
     deleteFuncionario.click(function(e){
         alerta.empty();
-        verificarCampo(nome, nomeVazio, e);
-        verificarCampo(cargo, cargoVazio, e);
-        verificarCampo(setor, setorVazio, e);
-        verificarCampo(superv, supervVazio, e);
-        verificarCampo(carga, cargaVazio, e);
-        verificarCampo(email, emailVazio, e);
+        verificarCampo(nome, 'Nome', e);
+        verificarCampo(cargo, 'Cargo', e);
+        verificarCampo(setor, 'Setor', e);
+        verificarCampo(superv, 'Supervisor', e);
+        verificarCampo(carga, 'Carga', e);
+        verificarCampo(email, 'Email', e);
         form.attr('action', '/edit_func/delete');
     });
 

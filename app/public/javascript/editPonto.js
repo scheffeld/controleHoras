@@ -43,15 +43,6 @@ dadosPontos.then(function(resposta){
     var deletePonto = $("#excluir");
 
     
-    // Carregando as mensagens de campo vazio
-    var nomeVazio = '<a class="col-12">Campo <strong>Nome</strong> vazio</a>'
-    var dataVazio = '<a class="col-12">Campo <strong>Data</strong> vazio</a>'
-    var feriadoVazio = '<a class="col-12">Campo <strong>Feriado</strong> vazio</a>'
-    var entPriVazio = '<a class="col-12">Campo <strong>1ª Entrada</strong> vazio</a>'
-    var saiPriVazio = '<a class="col-12">Campo <strong>1ª Saida</strong> vazio</a>'
-    var entSegVazio = '<a class="col-12">Campo <strong>2ª Entrada</strong> vazio</a>'
-    var saiSegVazio = '<a class="col-12">Campo <strong>2ª Saida</strong> vazio</a>'
-    
     // Escondendo alerta 
     alerta.hide();
     
@@ -74,11 +65,6 @@ dadosPontos.then(function(resposta){
         abaLista.addClass('active');
     })
 
-    // Adicionando os nomes dos funcionarios
-    for (i = 0; i < pontos.length; i++){
-        nome.append('<option value="'+ pontos[i].nome +'">'+ pontos[i].nome +'</option>')
-    }
-
     // Adicionando os dados na tabela
     for (i = 0; i < pontos.length; i++){
         var tr = $('<tr></tr>');
@@ -94,6 +80,11 @@ dadosPontos.then(function(resposta){
         tr.append('<td class="text-center">'+ (pontos[i].entSeg).slice(0, 5) +'</td>')
         tr.append('<td class="text-center">'+ (pontos[i].saiSeg).slice(0, 5) +'</td>')
         tbodyPontos.append(tr);
+    }
+
+    // Adicionando os nomes dos funcionarios
+    for (i = 0; i < pontos.length; i++){
+        nome.append('<option value="'+ pontos[i].nome +'">'+ pontos[i].nome +'</option>')
     }
 
     // Adicionando as datas de acordo com o funcionario
@@ -126,86 +117,39 @@ dadosPontos.then(function(resposta){
     alerta.click(function(){
         alerta.hide();
     })
+
+    //  Função para verificar o campo vazio
+    var verificarCampo = function(nomeCampo, alertaCampo, e){
+        if (nomeCampo.val() == '' || nomeCampo.val() == null || nomeCampo.val() == 'vazio'){
+            e.preventDefault();
+            alerta.append('<a class="col-12">Campo <strong>'+ alertaCampo +'</strong> vazio</a>')
+            alerta.show();
+        };
+    }
     
     // Ação para click no botão de atualização de dados
     updatePonto.click(function(e){
         alerta.empty()
-        if (nome.val() == 'vazio' || nome.val() == null){
-            e.preventDefault();
-            alerta.append(nomeVazio)
-            alerta.show();
-        };
-        if (data_ponto.val() == '' || data_ponto.val() == null){
-            e.preventDefault();
-            alerta.append(dataVazio)
-            alerta.show();
-        };
-        if (feriado.val() == 'vazio' || feriado.val() == null){
-            e.preventDefault();
-            alerta.append(feriadoVazio)
-            alerta.show();
-        };
-        if (entPri.val() == '' || entPri.val() == null){
-            e.preventDefault();
-            alerta.append(entPriVazio)
-            alerta.show();
-        };
-        if (saiPri.val() == '' || saiPri.val() == null){
-            e.preventDefault();
-            alerta.append(saiPriVazio)
-            alerta.show();
-        };
-        if (entSeg.val() == '' || entSeg.val() == null){
-            e.preventDefault();
-            alerta.append(entSegVazio)
-            alerta.show();
-        };
-        if (saiSeg.val() == '' || saiSeg.val() == null){
-            e.preventDefault();
-            alerta.append(saiSegVazio)
-            alerta.show();
-        };
+        verificarCampo(nome, 'Nome', e);
+        verificarCampo(data_ponto, 'Data', e);
+        verificarCampo(feriado, 'Feriado', e);
+        verificarCampo(entPri, '1ª Entrada', e);
+        verificarCampo(saiPri, '1ª Saída', e);
+        verificarCampo(entSeg, '2ª Entrada', e);
+        verificarCampo(saiSeg, '2ª Saída', e);
         form.attr('action', '/edit_ponto/update');
     });
 
     // Ação para botão de exclusão de dados
     deletePonto.click(function(e){
         alerta.empty()
-        if (nome.val() == 'vazio' || nome.val() == null){
-            e.preventDefault();
-            alerta.append(nomeVazio)
-            alerta.show();
-        };
-        if (data_ponto.val() == '' || data_ponto.val() == null){
-            e.preventDefault();
-            alerta.append(dataVazio)
-            alerta.show();
-        };
-        if (feriado.val() == 'vazio' || feriado.val() == null){
-            e.preventDefault();
-            alerta.append(feriadoVazio)
-            alerta.show();
-        };
-        if (entPri.val() == '' || entPri.val() == null){
-            e.preventDefault();
-            alerta.append(entPriVazio)
-            alerta.show();
-        };
-        if (saiPri.val() == '' || saiPri.val() == null){
-            e.preventDefault();
-            alerta.append(saiPriVazio)
-            alerta.show();
-        };
-        if (entSeg.val() == '' || entSeg.val() == null){
-            e.preventDefault();
-            alerta.append(entSegVazio)
-            alerta.show();
-        };
-        if (saiSeg.val() == '' || saiSeg.val() == null){
-            e.preventDefault();
-            alerta.append(saiSegVazio)
-            alerta.show();
-        };
+        verificarCampo(nome, 'Nome', e);
+        verificarCampo(data_ponto, 'Data', e);
+        verificarCampo(feriado, 'Feriado', e);
+        verificarCampo(entPri, '1ª Entrada', e);
+        verificarCampo(saiPri, '1ª Saída', e);
+        verificarCampo(entSeg, '2ª Entrada', e);
+        verificarCampo(saiSeg, '2ª Saída', e);
         form.attr('action', '/edit_ponto/delete');
     });
 
