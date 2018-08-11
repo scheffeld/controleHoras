@@ -98,73 +98,36 @@ dadosFuncionarios.then(function(resposta){
         alerta.hide();
     })
 
+    //  Função para verificar o campo vazio
+    var verificarCampo = function(nomeCampo, alertaCampo, e){
+        if (nomeCampo.val() == '' || nomeCampo.val() == null){
+            e.preventDefault();
+            alerta.append(alertaCampo)
+            alerta.show();
+        };
+    }
+
+    // Ação para botão de atualização de dados
     updateFuncionario.click(function(e){
         alerta.empty();
-        if (nome.val() == '' || nome.val() == null){
-            e.preventDefault();
-            alerta.append(nomeVazio)
-            alerta.show();
-        };
-        if (cargo.val() == '' || cargo.val() == null){
-            e.preventDefault();
-            alerta.append(cargaVazio)
-            alerta.show();
-        };
-        if (setor.val() == '' || setor.val() == null){
-            e.preventDefault();
-            alerta.append(setorVazio)
-            alerta.show();
-        };
-        if (superv.val() == '' || superv.val() == null){
-            e.preventDefault();
-            alerta.append(supervVazio)
-            alerta.show();
-        };
-        if (carga.val() == '' || carga.val() == null){
-            e.preventDefault();
-            alerta.append(cargaVazio)
-            alerta.show();
-        };
-        if (email.val() == '' || email.val() == null){
-            e.preventDefault();
-            alerta.append(emailVazio)
-            alerta.show();
-        };
+        verificarCampo(nome, nomeVazio, e);
+        verificarCampo(cargo, cargoVazio, e);
+        verificarCampo(setor, setorVazio, e);
+        verificarCampo(superv, supervVazio, e);
+        verificarCampo(carga, cargaVazio, e);
+        verificarCampo(email, emailVazio, e);
         form.attr('action', '/edit_func/update');
     });
 
+    // Ação para botão de exclusão de dados
     deleteFuncionario.click(function(e){
         alerta.empty();
-        if (nome.val() == '' || nome.val() == null){
-            e.preventDefault();
-            alerta.append(nomeVazio)
-            alerta.show();
-        };
-        if (cargo.val() == '' || cargo.val() == null){
-            e.preventDefault();
-            alerta.append(cargaVazio)
-            alerta.show();
-        };
-        if (setor.val() == '' || setor.val() == null){
-            e.preventDefault();
-            alerta.append(setorVazio)
-            alerta.show();
-        };
-        if (superv.val() == '' || superv.val() == null){
-            e.preventDefault();
-            alerta.append(supervVazio)
-            alerta.show();
-        };
-        if (carga.val() == '' || carga.val() == null){
-            e.preventDefault();
-            alerta.append(cargaVazio)
-            alerta.show();
-        };
-        if (email.val() == '' || email.val() == null){
-            e.preventDefault();
-            alerta.append(emailVazio)
-            alerta.show();
-        };
+        verificarCampo(nome, nomeVazio, e);
+        verificarCampo(cargo, cargoVazio, e);
+        verificarCampo(setor, setorVazio, e);
+        verificarCampo(superv, supervVazio, e);
+        verificarCampo(carga, cargaVazio, e);
+        verificarCampo(email, emailVazio, e);
         form.attr('action', '/edit_func/delete');
     });
 

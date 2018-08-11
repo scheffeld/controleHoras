@@ -64,8 +64,8 @@
         </li>
     </ul>
     <div class="card text-center" style="height: 100%; padding: 50px; border-top: none; border-radius: 0px;">
-        <div class="alert alert-warning col-12" id="alert">
-            <strong>Ops.</strong> Parece que <a id="nomeAlert"></a> não tem registro de pontos.
+        <div class="alert alert-danger form-group row col-12" role="alert" id="alertaCampo">
+                    
         </div>
         <form class="form col-12" method="post" id="form">
             <div class="form-group row col-12">
@@ -84,6 +84,7 @@
                 </select>
                 <label class="medium col-2 col-form-label">Feriado:</label>
                 <select class="form-control col-4 light" name="feriado" id="feriado">
+                    <option value="vazio" disabled selected>Selecione uma opção.</option>
                     <option value="NAO">NAO</option>
                     <option value="SIM">SIM</option>
                 </select>
