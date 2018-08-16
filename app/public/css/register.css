@@ -1,0 +1,21 @@
+#registrar {
+    margin-top: 30px;
+    margin-bottom: 10px; 
+}
+
+#cardRegister {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 80px;
+    width: 600px;
+}
+
+#registrarLabel {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.labelDefault {
+    font-size: 12px;
+}

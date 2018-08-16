@@ -1,6 +1,5 @@
 var express = require('express');
 var consign = require('consign');
-var dateFormat = require('dateformat');
 var path = require('path');
 
 var app = express();

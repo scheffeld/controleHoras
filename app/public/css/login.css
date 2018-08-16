@@ -1,0 +1,41 @@
+#cardLogin {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+#entrar {
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+#registrar {
+    margin-top: 5px;
+}
+
+#esqueciSenha {
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+
+#esqueciSenha:hover {
+    color: #1e88e5;
+}
+
+#loginLabel {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.labelDefault {
+    font-size: 12px;
+}

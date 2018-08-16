@@ -6479,3 +6479,211 @@ Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
 2018-08-11T19:30:46.960420Z 0 [Note] Shutting down plugin 'binlog'
 2018-08-11T19:30:46.996397Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v1\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: Shutdown complete
 
+2018-08-11T21:41:46.326469Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-08-11T21:41:46.326469Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2018-08-11T21:41:46.326469Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2018-08-11T21:41:46.326469Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-08-11T21:41:46.327468Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2018-08-11T21:41:46.327468Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 14240 ...
+2018-08-11T21:41:46.355452Z 0 [ERROR] Can't open shared library 'C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Não foi possível encontrar o módulo especificado.)
+2018-08-11T21:41:46.357451Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2018-08-11T21:41:46.360449Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-08-11T21:41:46.361448Z 0 [Note] InnoDB: Uses event mutexes
+2018-08-11T21:41:46.362448Z 0 [Note] InnoDB: Memory barrier is not used
+2018-08-11T21:41:46.363448Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-08-11T21:41:46.365446Z 0 [Note] InnoDB: Number of pools: 1
+2018-08-11T21:41:46.366447Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-08-11T21:41:46.445399Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-08-11T21:41:46.455394Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-11T21:41:46.549370Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-11T21:41:46.737262Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-08-11T21:41:46.738262Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-08-11T21:41:46.740261Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-08-11T21:41:46.776243Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-08-11T21:41:46.791232Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-08-11T21:41:46.792231Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-08-11T21:41:46.793231Z 0 [Note] InnoDB: Waiting for purge to start
+2018-08-11T21:41:46.845203Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 5559642
+2018-08-11T21:41:46.846217Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2018-08-11T21:41:46.846217Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-08-11T21:41:46.860194Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-08-11T21:41:46.864190Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-08-11T21:41:46.865191Z 0 [Note] IPv6 is available.
+2018-08-11T21:41:46.865191Z 0 [Note]   - '::' resolves to '::';
+2018-08-11T21:41:46.866189Z 0 [Note] Server socket created on IP: '::'.
+2018-08-11T21:41:46.895173Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180811 18:41:46
+2018-08-11T21:41:46.928154Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-08-11T21:41:46.929156Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-08-11T21:43:17.256584Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 4764ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-12T18:17:16.368580Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 73716964ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-12T18:36:17.824664Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 657434ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-12T19:12:45.588679Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1356326ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-12T21:11:31.479172Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 5497021ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-13T00:14:43.054411Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 10799346ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-13T00:21:24.080263Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 394873ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-13T00:33:47.201557Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 184845ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-13T04:05:06.842637Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 10798725ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-13T17:20:46.083765Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 47733216ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-13T17:44:01.002058Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: Normal shutdown
+
+2018-08-13T17:44:01.004055Z 0 [Note] Giving 2 client threads a chance to die gracefully
+2018-08-13T17:44:01.004055Z 0 [Note] Shutting down slave threads
+2018-08-13T17:44:03.012950Z 0 [Note] Forcefully disconnecting 2 remaining clients
+2018-08-13T17:44:03.013949Z 0 [Warning] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: Forcing close of thread 2  user: 'root'
+
+2018-08-13T17:44:03.031938Z 0 [Warning] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: Forcing close of thread 3  user: 'root'
+
+2018-08-13T17:44:03.037935Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2018-08-13T17:44:03.071915Z 0 [Note] Binlog end
+2018-08-13T17:44:03.079911Z 0 [Note] Shutting down plugin 'ngram'
+2018-08-13T17:44:03.084909Z 0 [Note] Shutting down plugin 'partition'
+2018-08-13T17:44:03.086912Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2018-08-13T17:44:03.086912Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2018-08-13T17:44:03.087908Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2018-08-13T17:44:03.088910Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2018-08-13T17:44:03.089905Z 0 [Note] Shutting down plugin 'MyISAM'
+2018-08-13T17:44:03.090905Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2018-08-13T17:44:03.091904Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2018-08-13T17:44:03.092903Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2018-08-13T17:44:03.093903Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2018-08-13T17:44:03.094904Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2018-08-13T17:44:03.094904Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2018-08-13T17:44:03.095902Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2018-08-13T17:44:03.096901Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2018-08-13T17:44:03.097901Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2018-08-13T17:44:03.098900Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2018-08-13T17:44:03.099899Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2018-08-13T17:44:03.100899Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2018-08-13T17:44:03.102908Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2018-08-13T17:44:03.103906Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2018-08-13T17:44:03.104902Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2018-08-13T17:44:03.105896Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2018-08-13T17:44:03.106895Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2018-08-13T17:44:03.107895Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2018-08-13T17:44:03.108895Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2018-08-13T17:44:03.110893Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2018-08-13T17:44:03.111893Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2018-08-13T17:44:03.111893Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2018-08-13T17:44:03.113892Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2018-08-13T17:44:03.114891Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2018-08-13T17:44:03.116890Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2018-08-13T17:44:03.118894Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2018-08-13T17:44:03.119887Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2018-08-13T17:44:03.120887Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2018-08-13T17:44:03.121887Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2018-08-13T17:44:03.121887Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2018-08-13T17:44:03.122886Z 0 [Note] Shutting down plugin 'InnoDB'
+2018-08-13T17:44:03.123885Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2018-08-13T17:44:03.125885Z 0 [Note] InnoDB: Starting shutdown...
+2018-08-13T17:44:03.226828Z 0 [Note] InnoDB: Dumping buffer pool(s) to C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2018-08-13T17:44:03.242819Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 180813 14:44:03
+2018-08-13T17:44:04.633020Z 0 [Note] InnoDB: Shutdown completed; log sequence number 5720941
+2018-08-13T17:44:04.635020Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-08-13T17:44:04.636020Z 0 [Note] Shutting down plugin 'MEMORY'
+2018-08-13T17:44:04.636020Z 0 [Note] Shutting down plugin 'CSV'
+2018-08-13T17:44:04.637019Z 0 [Note] Shutting down plugin 'sha256_password'
+2018-08-13T17:44:04.638017Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2018-08-13T17:44:04.639016Z 0 [Note] Shutting down plugin 'binlog'
+2018-08-13T17:44:04.644015Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: Shutdown complete
+
+2018-08-13T18:09:56.762260Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-08-13T18:09:56.762260Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2018-08-13T18:09:56.762260Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2018-08-13T18:09:56.762260Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-08-13T18:09:56.762260Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2018-08-13T18:09:56.762260Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 7628 ...
+2018-08-13T18:09:56.802473Z 0 [ERROR] Can't open shared library 'C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Não foi possível encontrar o módulo especificado.)
+2018-08-13T18:09:56.805469Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2018-08-13T18:09:56.807468Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-08-13T18:09:56.808469Z 0 [Note] InnoDB: Uses event mutexes
+2018-08-13T18:09:56.808469Z 0 [Note] InnoDB: Memory barrier is not used
+2018-08-13T18:09:56.809471Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-08-13T18:09:56.810466Z 0 [Note] InnoDB: Number of pools: 1
+2018-08-13T18:09:56.811466Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-08-13T18:09:56.895423Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-08-13T18:09:56.908414Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-13T18:09:56.953419Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-13T18:09:57.539000Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-08-13T18:09:57.540983Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-08-13T18:09:57.608194Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-08-13T18:09:57.613190Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-08-13T18:09:57.614189Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-08-13T18:09:57.616189Z 0 [Note] InnoDB: Waiting for purge to start
+2018-08-13T18:09:57.667694Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 5720941
+2018-08-13T18:09:57.668690Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2018-08-13T18:09:57.668690Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-08-13T18:09:57.710168Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-08-13T18:09:57.710168Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180813 15:09:57
+2018-08-13T18:09:57.714163Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-08-13T18:09:57.715162Z 0 [Note] IPv6 is available.
+2018-08-13T18:09:57.715162Z 0 [Note]   - '::' resolves to '::';
+2018-08-13T18:09:57.716163Z 0 [Note] Server socket created on IP: '::'.
+2018-08-13T18:09:59.700312Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-08-13T18:09:59.701326Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-08-13T21:07:03.436704Z 4 [Note] Aborted connection 4 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-13T21:07:03.436704Z 5 [Note] Aborted connection 5 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T20:57:40.926135Z 7 [Note] Aborted connection 7 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T20:57:40.926135Z 6 [Note] Aborted connection 6 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.949924Z 13 [Note] Aborted connection 13 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.949924Z 16 [Note] Aborted connection 16 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.949924Z 10 [Note] Aborted connection 10 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.951913Z 20 [Note] Aborted connection 20 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.951913Z 11 [Note] Aborted connection 11 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.951913Z 8 [Note] Aborted connection 8 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.951913Z 9 [Note] Aborted connection 9 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.951913Z 17 [Note] Aborted connection 17 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.951913Z 12 [Note] Aborted connection 12 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 15 [Note] Aborted connection 15 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 14 [Note] Aborted connection 14 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 24 [Note] Aborted connection 24 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 18 [Note] Aborted connection 18 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 21 [Note] Aborted connection 21 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 22 [Note] Aborted connection 22 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 19 [Note] Aborted connection 19 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 23 [Note] Aborted connection 23 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 25 [Note] Aborted connection 25 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 27 [Note] Aborted connection 27 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-14T21:47:18.952915Z 26 [Note] Aborted connection 26 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T01:46:29.806555Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 832149ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-15T02:16:09.279389Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1774469ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-15T02:47:18.026155Z 45 [Note] Aborted connection 45 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.026155Z 41 [Note] Aborted connection 41 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.026155Z 44 [Note] Aborted connection 44 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.026155Z 40 [Note] Aborted connection 40 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.026155Z 28 [Note] Aborted connection 28 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.027154Z 30 [Note] Aborted connection 30 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.027154Z 32 [Note] Aborted connection 32 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.027154Z 31 [Note] Aborted connection 31 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.027154Z 29 [Note] Aborted connection 29 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.027154Z 34 [Note] Aborted connection 34 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.027154Z 35 [Note] Aborted connection 35 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.028153Z 37 [Note] Aborted connection 37 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.028153Z 33 [Note] Aborted connection 33 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.028153Z 36 [Note] Aborted connection 36 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.028153Z 38 [Note] Aborted connection 38 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.029154Z 39 [Note] Aborted connection 39 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.029154Z 42 [Note] Aborted connection 42 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.029154Z 43 [Note] Aborted connection 43 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.029154Z 47 [Note] Aborted connection 47 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T02:47:18.029154Z 46 [Note] Aborted connection 46 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T06:29:42.146359Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 10799649ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-15T14:15:47.434313Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 27958113ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-15T14:49:32.402978Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 724993ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-15T15:17:36.415206Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 515442ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-15T17:15:57.311337Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 4607033ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-15T23:21:26.387517Z 48 [Note] Aborted connection 48 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+2018-08-15T23:21:26.387517Z 49 [Note] Aborted connection 49 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+2018-08-15T23:21:26.420153Z 54 [Note] Aborted connection 54 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.422149Z 59 [Note] Aborted connection 59 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.420153Z 55 [Note] Aborted connection 55 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.421150Z 52 [Note] Aborted connection 52 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.421150Z 50 [Note] Aborted connection 50 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.421150Z 51 [Note] Aborted connection 51 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.421150Z 56 [Note] Aborted connection 56 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.422149Z 57 [Note] Aborted connection 57 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.422149Z 60 [Note] Aborted connection 60 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.423148Z 58 [Note] Aborted connection 58 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.423148Z 61 [Note] Aborted connection 61 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-15T23:21:26.420153Z 53 [Note] Aborted connection 53 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
