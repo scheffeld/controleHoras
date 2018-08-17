@@ -8,5 +8,9 @@ module.exports = function(){
         connection.query('INSERT INTO pontos SET ?', ponto, callback);
     };
     
+    this.salvarUser = function(dados, connection, callback){
+        connection.query('INSERT INTO users SET ?', dados, callback);
+    };
+    
     return this;
 }

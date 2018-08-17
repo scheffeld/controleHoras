@@ -2,6 +2,24 @@ module.exports = function(app){
     
     var upperCase = require("upper-case");
 
+    var crypto = require('crypto'),
+    algorithm = 'aes-256-ctr',
+    password = 'd6F3Efeq';
+
+    function encrypt(text){
+        var cipher = crypto.createCipher(algorithm,password)
+        var crypted = cipher.update(text,'utf8','hex')
+        crypted += cipher.final('hex');
+        return crypted;
+    }
+    
+    function decrypt(text){
+        var decipher = crypto.createDecipher(algorithm,password)
+        var dec = decipher.update(text,'hex','utf8')
+        dec += decipher.final('utf8');
+        return dec;
+    }
+
     app.post('/cad_func/salvar', function(req, res){
         var funcionario = req.body;
 
@@ -32,8 +50,8 @@ module.exports = function(app){
 
         var connection  = app.config.dbConnection();
         var models = app.app.models.insert;
-        var select = app.app.models.select
-        var mail = app.app.models.mail
+        var select = app.app.models.select;
+        var mail = app.app.models.mail;
         
         select.recuperarFuncionario(connection, function(error, result){
             funcionario = result;
@@ -55,5 +73,33 @@ module.exports = function(app){
             }
         });
     });
+
+    app.post('/register/cadastro', function(req, res){
+        var user = req.body
+
+        user.nome = upperCase(user.nome);
+        user.cargo = upperCase(user.cargo);
+        user.setor = upperCase(user.setor);
+        user.superv = upperCase(user.superv);
+        user.carga = upperCase(user.carga);
+        user.password = encrypt(user.password);
+
+        
+        var connection = app.config.dbConnection();
+        var models = app.app.models.insert;
+        var mail = app.app.models.mail;
+
+        models.salvarUser(user, connection, function(error, result){
+            if(error){
+                console.log(error);
+                res.send(user)
+            } else {
+                res.redirect('/home');
+                console.log('Home renderizado com sucesso!')
+            }
+        })
+
+
+    })
 
 };
