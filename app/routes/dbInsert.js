@@ -77,6 +77,7 @@ module.exports = function(app){
     app.post('/register/cadastro', function(req, res){
         var user = req.body
 
+
         user.nome = upperCase(user.nome);
         user.cargo = upperCase(user.cargo);
         user.setor = upperCase(user.setor);
@@ -98,7 +99,6 @@ module.exports = function(app){
                 console.log('Home renderizado com sucesso!')
             }
         })
-
 
     })
 
