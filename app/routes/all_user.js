@@ -8,12 +8,4 @@ module.exports = function(app){
         res.render('home');
     });
 
-    app.get('/about', function(req, res){
-        res.render('about');
-    });
-
-    app.get('/sobre', function(req, res){
-        res.render('about');
-    });
-
 };

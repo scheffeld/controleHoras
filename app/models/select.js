@@ -1,12 +1,4 @@
-module.exports = function(){   
-    
-    this.recuperarFuncionario = function(connection, callback){
-        connection.query('SELECT * FROM funcionarios', callback);
-    };
-
-    this.recuperarPonto = function(connection, callback){
-        connection.query('SELECT * FROM pontos', callback);
-    };
+module.exports = function(){
 
     this.logar = function(user, connection, callback){
         connection.query('SELECT nome FROM users WHERE email = ? AND password = ?', [user.email, user.password], callback);

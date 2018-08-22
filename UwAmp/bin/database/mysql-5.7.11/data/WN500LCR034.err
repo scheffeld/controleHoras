@@ -6805,3 +6805,132 @@ Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
 2018-08-17T21:16:07.732384Z 78 [Note] Aborted connection 78 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
 2018-08-17T21:16:07.732384Z 80 [Note] Aborted connection 80 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
 2018-08-17T21:16:07.732384Z 79 [Note] Aborted connection 79 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-17T22:27:09.547366Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-08-17T22:27:09.547366Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2018-08-17T22:27:09.547366Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2018-08-17T22:27:09.547366Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-08-17T22:27:09.547366Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2018-08-17T22:27:09.547366Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 8928 ...
+2018-08-17T22:27:09.594239Z 0 [ERROR] Can't open shared library 'C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Não foi possível encontrar o módulo especificado.)
+2018-08-17T22:27:09.594239Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2018-08-17T22:27:09.594239Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-08-17T22:27:09.594239Z 0 [Note] InnoDB: Uses event mutexes
+2018-08-17T22:27:09.594239Z 0 [Note] InnoDB: Memory barrier is not used
+2018-08-17T22:27:09.594239Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-08-17T22:27:09.594239Z 0 [Note] InnoDB: Number of pools: 1
+2018-08-17T22:27:09.594239Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-08-17T22:27:09.672361Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-08-17T22:27:09.672361Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-17T22:27:09.734858Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-17T22:27:09.750483Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 5856693
+2018-08-17T22:27:09.750483Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 5856702
+2018-08-17T22:27:09.750483Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 5856702
+2018-08-17T22:27:09.750483Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-08-17T22:27:09.750483Z 0 [Note] InnoDB: Starting crash recovery.
+2018-08-17T22:27:10.344204Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-08-17T22:27:10.344204Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-08-17T22:27:10.344204Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-08-17T22:27:10.375437Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-08-17T22:27:10.391061Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-08-17T22:27:10.391061Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-08-17T22:27:10.391061Z 0 [Note] InnoDB: Waiting for purge to start
+2018-08-17T22:27:10.469182Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 5856702
+2018-08-17T22:27:10.469182Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2018-08-17T22:27:10.469182Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-08-17T22:27:10.500430Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-08-17T22:27:10.500430Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180817 19:27:10
+2018-08-17T22:27:10.500430Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-08-17T22:27:10.516054Z 0 [Note] IPv6 is available.
+2018-08-17T22:27:10.516054Z 0 [Note]   - '::' resolves to '::';
+2018-08-17T22:27:10.516054Z 0 [Note] Server socket created on IP: '::'.
+2018-08-17T22:27:11.906618Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-08-17T22:27:11.906618Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-08-17T22:40:56.176857Z 3 [Note] Aborted connection 3 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-17T22:40:56.176857Z 2 [Note] Aborted connection 2 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-17T22:44:28.837719Z 4 [Note] Aborted connection 4 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-17T22:44:28.838720Z 5 [Note] Aborted connection 5 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-17T22:44:28.838720Z 6 [Note] Aborted connection 6 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-18T04:46:11.952858Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 10800941ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-18T11:25:09.327798Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 23935367ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2018-08-18T16:23:47.978078Z 7 [Note] Aborted connection 7 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+2018-08-18T16:23:47.978078Z 8 [Note] Aborted connection 8 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-18T16:23:47.978078Z 9 [Note] Aborted connection 9 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:37:55.729813Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-08-22T00:37:55.729813Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2018-08-22T00:37:55.729813Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2018-08-22T00:37:55.729813Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-08-22T00:37:55.729813Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2018-08-22T00:37:55.729813Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 10100 ...
+2018-08-22T00:37:55.793643Z 0 [ERROR] Can't open shared library 'C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Não foi possível encontrar o módulo especificado.)
+2018-08-22T00:37:55.795637Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2018-08-22T00:37:55.798629Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-08-22T00:37:55.799627Z 0 [Note] InnoDB: Uses event mutexes
+2018-08-22T00:37:55.800635Z 0 [Note] InnoDB: Memory barrier is not used
+2018-08-22T00:37:55.802619Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-08-22T00:37:55.804613Z 0 [Note] InnoDB: Number of pools: 1
+2018-08-22T00:37:55.805612Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-08-22T00:37:55.923297Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-08-22T00:37:55.964196Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-22T00:37:56.002341Z 0 [ERROR] InnoDB: .\ib_logfile0 can't be opened in read-write mode.
+2018-08-22T00:37:56.002341Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2018-08-22T00:37:56.206795Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2018-08-22T00:37:56.206795Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2018-08-22T00:37:56.207792Z 0 [ERROR] Failed to initialize plugins.
+2018-08-22T00:37:56.207792Z 0 [ERROR] Aborting
+
+2018-08-22T00:37:56.208790Z 0 [Note] Binlog end
+2018-08-22T00:37:56.208790Z 0 [Note] Shutting down plugin 'CSV'
+2018-08-22T00:37:56.210784Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: Shutdown complete
+
+2018-08-22T00:39:39.357897Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-08-22T00:39:39.357897Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2018-08-22T00:39:39.357897Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2018-08-22T00:39:39.357897Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-08-22T00:39:39.357897Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2018-08-22T00:39:39.357897Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 9920 ...
+2018-08-22T00:39:39.376847Z 0 [ERROR] Can't open shared library 'C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Não foi possível encontrar o módulo especificado.)
+2018-08-22T00:39:39.378842Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2018-08-22T00:39:39.380836Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-08-22T00:39:39.381833Z 0 [Note] InnoDB: Uses event mutexes
+2018-08-22T00:39:39.381833Z 0 [Note] InnoDB: Memory barrier is not used
+2018-08-22T00:39:39.382831Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-08-22T00:39:39.383828Z 0 [Note] InnoDB: Number of pools: 1
+2018-08-22T00:39:39.384827Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-08-22T00:39:39.464612Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-08-22T00:39:39.476604Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-22T00:39:39.525325Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-22T00:39:39.540288Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 5856721
+2018-08-22T00:39:39.541283Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 5856730
+2018-08-22T00:39:39.560232Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 5856730
+2018-08-22T00:39:39.561228Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-08-22T00:39:39.562227Z 0 [Note] InnoDB: Starting crash recovery.
+2018-08-22T00:39:40.230680Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-08-22T00:39:40.231677Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-08-22T00:39:40.238659Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-08-22T00:39:40.301575Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-08-22T00:39:40.312545Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-08-22T00:39:40.313542Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-08-22T00:39:40.314540Z 0 [Note] InnoDB: Waiting for purge to start
+2018-08-22T00:39:40.366130Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 5856730
+2018-08-22T00:39:40.367129Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2018-08-22T00:39:40.367129Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-08-22T00:39:40.422365Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180821 21:39:40
+2018-08-22T00:39:40.424358Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-08-22T00:39:40.427349Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-08-22T00:39:40.428347Z 0 [Note] IPv6 is available.
+2018-08-22T00:39:40.428347Z 0 [Note]   - '::' resolves to '::';
+2018-08-22T00:39:40.429344Z 0 [Note] Server socket created on IP: '::'.
+2018-08-22T00:39:42.075518Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-08-22T00:39:42.075518Z 0 [Note] C:\Users\ro_scheffeld\Downloads\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-08-22T00:39:54.549895Z 2 [Note] Aborted connection 2 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:39:54.549895Z 3 [Note] Aborted connection 3 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:39:54.559868Z 4 [Note] Aborted connection 4 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:40:35.155105Z 5 [Note] Aborted connection 5 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:41:07.314499Z 6 [Note] Aborted connection 6 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:49:15.884607Z 7 [Note] Aborted connection 7 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:49:15.885597Z 10 [Note] Aborted connection 10 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:49:15.885597Z 9 [Note] Aborted connection 9 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:49:15.885597Z 8 [Note] Aborted connection 8 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-22T00:49:15.886595Z 11 [Note] Aborted connection 11 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
