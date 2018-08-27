@@ -25,24 +25,12 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle medium" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                Funcionarios
-                </a>
-                <div class="dropdown-menu">
-                <a class="dropdown-item light" href="cad_func">Cadastrar</a>
-                <a class="dropdown-item light" href="edit_func">Editar|Excluir</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle medium" id="navbarDropdownMenuLink" data-toggle="dropdown">
                 Ponto
                 </a>
                 <div class="dropdown-menu">
                 <a class="dropdown-item light" href="cad_ponto">Cadastrar</a>
                 <a class="dropdown-item light" href="edit_ponto">Editar|Excluir</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link medium" href="relatorios">Relatórios</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link medium" href="about">Sobre</a>
@@ -68,6 +56,7 @@
             <div class="form-group">
                 <label class="labelDefault">Nome</label>
                 <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo">
+                <label class="labelDefault" id="nomeExiste">Nome já cadastrado.</label>
             </div>
             <div class="form-group">
                 <label class="labelDefault">Cargo</label>
@@ -88,19 +77,22 @@
             <div class="form-group">
                 <label class="labelDefault">Email</label>
                 <input type="email" class="form-control" name="email" id="email" placeholder="email@provedor.com.br">
+                <label class="labelDefault" id="emailExiste">Email já cadastrado.</label>
             </div>
             <div class="form-group">
                 <label class="labelDefault">Senha</label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                <input type="password" class="form-control passwordError" name="password" maxlength="12" id="password" placeholder="Password">
+                <label class="labelDefault" id="senhaMenor">Senha com menos de 8 caracteres.</label>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="password" placeholder="Confirme o password">
+                <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirme o password">
+                <label class="labelDefault" id="senhaDiferente">As senhas não correspondem</label>
             </div>
             <div class="form-group">
-                <input class="btn btn-success col-12" type="submit" value="Registrar"/>
+                <input class="btn btn-success col-12" type="submit" value="Registrar" id="registrar"/>
             </div>
         </form>
     </div>
 </body>
-<!-- <script src="../javascript/relatorios.js"></script> -->
+<script src="../javascript/register.js"></script>
 </html>
