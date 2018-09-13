@@ -35,11 +35,10 @@ module.exports = function(app){
         var models = app.app.models.select();
 
         models.logar(user, connection, function(error, result){
-            if (error){
+            if (error == true){
                 console.log(error)
             } else {
-                console.log('Logado');
-                res.render('home', result);
+                console.log(result)
             }
         })
 

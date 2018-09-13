@@ -7032,3 +7032,103 @@ Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
 2018-08-27T18:55:12.204437Z 100 [Note] Aborted connection 100 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
 2018-08-27T18:58:47.431675Z 102 [Note] Aborted connection 102 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
 2018-08-27T18:59:45.313381Z 103 [Note] Aborted connection 103 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T20:45:22.545248Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-08-27T20:45:22.545248Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2018-08-27T20:45:22.545248Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2018-08-27T20:45:22.545248Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2018-08-27T20:45:22.546246Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2018-08-27T20:45:22.546246Z 0 [Note] C:\Users\ro_scheffeld\Documents\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 4752 ...
+2018-08-27T20:45:22.596114Z 0 [ERROR] Can't open shared library 'C:\Users\ro_scheffeld\Documents\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Não foi possível encontrar o módulo especificado.)
+2018-08-27T20:45:22.598108Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2018-08-27T20:45:22.601100Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-08-27T20:45:22.601100Z 0 [Note] InnoDB: Uses event mutexes
+2018-08-27T20:45:22.602097Z 0 [Note] InnoDB: Memory barrier is not used
+2018-08-27T20:45:22.603094Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-08-27T20:45:22.605090Z 0 [Note] InnoDB: Number of pools: 1
+2018-08-27T20:45:22.606087Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2018-08-27T20:45:22.709809Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-08-27T20:45:22.727761Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-27T20:45:22.861404Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-27T20:45:22.865395Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 5937270
+2018-08-27T20:45:22.866390Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 5937279
+2018-08-27T20:45:22.869393Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 5937279
+2018-08-27T20:45:22.870380Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-08-27T20:45:22.870380Z 0 [Note] InnoDB: Starting crash recovery.
+2018-08-27T20:45:23.399382Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-08-27T20:45:23.400381Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-08-27T20:45:23.402376Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-08-27T20:45:23.444263Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-08-27T20:45:23.462215Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-08-27T20:45:23.463218Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-08-27T20:45:23.465208Z 0 [Note] InnoDB: Waiting for purge to start
+2018-08-27T20:45:23.516866Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 5937279
+2018-08-27T20:45:23.517863Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\ro_scheffeld\Documents\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2018-08-27T20:45:23.517863Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-08-27T20:45:23.557758Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180827 17:45:23
+2018-08-27T20:45:23.564737Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2018-08-27T20:45:23.568725Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-08-27T20:45:23.570721Z 0 [Note] IPv6 is available.
+2018-08-27T20:45:23.571720Z 0 [Note]   - '::' resolves to '::';
+2018-08-27T20:45:23.571720Z 0 [Note] Server socket created on IP: '::'.
+2018-08-27T20:45:24.861858Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-08-27T20:45:24.861858Z 0 [Note] C:\Users\ro_scheffeld\Documents\controleHoras_v2\UwAmp\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2018-08-27T23:14:11.389204Z 2 [Note] Aborted connection 2 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:14:11.390201Z 3 [Note] Aborted connection 3 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:14:51.182818Z 6 [Note] Aborted connection 6 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:15:09.261955Z 7 [Note] Aborted connection 7 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:16:36.741051Z 8 [Note] Aborted connection 8 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:16:36.741051Z 9 [Note] Aborted connection 9 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:17:10.409716Z 10 [Note] Aborted connection 10 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:17:51.761899Z 11 [Note] Aborted connection 11 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:40:21.706669Z 12 [Note] Aborted connection 12 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:48:42.170874Z 13 [Note] Aborted connection 13 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:48:42.171874Z 14 [Note] Aborted connection 14 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:49:40.129943Z 15 [Note] Aborted connection 15 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:50:27.532242Z 16 [Note] Aborted connection 16 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:50:27.533240Z 18 [Note] Aborted connection 18 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:50:27.533240Z 17 [Note] Aborted connection 17 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-27T23:58:06.207119Z 19 [Note] Aborted connection 19 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:02:43.938090Z 20 [Note] Aborted connection 20 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:03:49.980515Z 22 [Note] Aborted connection 22 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:03:49.981512Z 21 [Note] Aborted connection 21 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:04:01.825314Z 23 [Note] Aborted connection 23 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:04:50.610567Z 24 [Note] Aborted connection 24 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:07:04.700040Z 26 [Note] Aborted connection 26 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:07:04.701037Z 25 [Note] Aborted connection 25 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:08:23.718764Z 27 [Note] Aborted connection 27 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:08:23.719763Z 28 [Note] Aborted connection 28 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:09:25.700738Z 29 [Note] Aborted connection 29 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:09:25.700738Z 30 [Note] Aborted connection 30 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:09:37.756865Z 31 [Note] Aborted connection 31 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:13:37.167356Z 32 [Note] Aborted connection 32 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:15:23.845748Z 33 [Note] Aborted connection 33 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:15:23.846754Z 34 [Note] Aborted connection 34 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:32:47.553806Z 35 [Note] Aborted connection 35 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:32:53.098449Z 36 [Note] Aborted connection 36 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:45:20.658247Z 37 [Note] Aborted connection 37 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:50:34.156742Z 38 [Note] Aborted connection 38 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T00:50:45.513638Z 39 [Note] Aborted connection 39 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T09:01:27.509293Z 40 [Note] Aborted connection 40 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+2018-08-28T20:49:23.757105Z 42 [Note] Aborted connection 42 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 52 [Note] Aborted connection 52 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.757105Z 41 [Note] Aborted connection 41 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.757105Z 57 [Note] Aborted connection 57 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.757105Z 45 [Note] Aborted connection 45 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.757105Z 43 [Note] Aborted connection 43 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.757105Z 51 [Note] Aborted connection 51 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.757105Z 46 [Note] Aborted connection 46 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 48 [Note] Aborted connection 48 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 50 [Note] Aborted connection 50 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 47 [Note] Aborted connection 47 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 49 [Note] Aborted connection 49 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 59 [Note] Aborted connection 59 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.757105Z 44 [Note] Aborted connection 44 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 53 [Note] Aborted connection 53 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 56 [Note] Aborted connection 56 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 54 [Note] Aborted connection 54 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.758102Z 58 [Note] Aborted connection 58 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:49:23.759098Z 55 [Note] Aborted connection 55 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:50:26.950753Z 60 [Note] Aborted connection 60 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:50:51.648831Z 61 [Note] Aborted connection 61 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2018-08-28T20:51:12.357343Z 62 [Note] Aborted connection 62 to db: 'projeto_vaga' user: 'root' host: 'localhost' (Got an error reading communication packets)
